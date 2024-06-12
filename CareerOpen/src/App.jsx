@@ -1,4 +1,4 @@
-import './App.css'
+
 import NavBar from './components/Header/Navigation.jsx';
 import Body from './components/Body/landpage.jsx'
 
