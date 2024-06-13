@@ -1,4 +1,4 @@
-//import { useState } from 'react'
+
 import careerOpen from '../../assets/logo.svg';
 
 const navigation = [
@@ -18,17 +18,16 @@ function Logo() {
 
 
   export default function NavBar () {
-    //const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
-      <div className="bg-white">
+      <div className="bg-white max-w-full mb-3 -mt-5">
         <nav className="flex items-center justify-between p-6 lg:px-8 font-bold" aria-label="Global" >
-            <a className="w-96 -m-1.5 p-1.5 ">
+            <a className="w-96">
               <span className="sr-only">Your Company</span>
               <Logo />
             </a>
           <div className="lg:flex lg:gap-x-12 ">
             {navigation.map((item) => (
-              <a key={item.name} className="text-base font-bold leading-6 text-gray-900">
+              <a key={item.name} className="text-base font-medium leading-6 text-gray-900">
                 {item.name}
               </a>
             ))}
