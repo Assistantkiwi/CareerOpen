@@ -1,7 +1,9 @@
+
 import logo from '../../assets/logo.svg'
 import googleLogo from '../../assets/Google.svg'
 import groupLogo from '../../assets/Group93105.svg'
 import arrowLeft from '../../assets/arrow-left.svg'
+
 
 function Group() {
     return (
@@ -35,18 +37,16 @@ function Google() {
     );
 }
 
-
-
-const SignUp = () => {
+const SignIn = () => {
   return (
     <div>
       <div className="container">
         <div className="sign-up-side">
             <div className="back">
-                <Arrow /> <span>Back</span>                    
+                <Arrow /> <span>Back</span>     
             </div>
             <div className="step-img">
-               <Group className="img" /> 
+                <Group />
             </div>
             <div className="sign-up-side-text">
                 <p>One-Stop Application Tracking Hub</p>
@@ -55,17 +55,22 @@ const SignUp = () => {
             
         </div>
         <div className="sign-up-form">
+            <div className="back">
+                <a href="">
+                    <Arrow /> 
+                </a>    
+            </div>
             <div className="sign-up-head">
                 <div className="logo">
-                   <Logo /> 
+                    <Logo />
                 </div>
                 <div className="sign-up">
-                    <p>Sign Up</p>
+                    <p>Sign In</p>
                     <p>Activate Your Job Search Journey</p>
                 </div>
                 
                     <a href="http://" target="_blank" rel="noopener noreferrer">
-                          <Google /> 
+                        <Google /> 
                     </a>
                 
             </div>
@@ -75,18 +80,6 @@ const SignUp = () => {
             </div>
             <div className="form">
                 <form action="" method="get">
-                    <div className="name">
-                        <div className="name-1">
-                            <label htmlFor="first-name" >First Name</label>
-                            
-                            <input type="text" name="first-name" id="first-name" placeholder="Enter your First Name" />
-                        </div>
-                        <div className="name-2">
-                            <label htmlFor="last-name">Last Name</label>
-                            
-                            <input type="text" name="last-name" id="last-name" placeholder="Enter your Last Name" />
-                        </div>
-                    </div>
                     <div className="email-address">
                         <label htmlFor="email">Email Address</label>
                         
@@ -97,19 +90,13 @@ const SignUp = () => {
                         
                         <input type="password" name="password" id="password" placeholder="Enter your password" />
                     </div>
-                    <div className="confirm-password">
-                        <label htmlFor="confirm-password">Password</label>
-                        
-                        <input type="password" name="password" id="confirm-password" placeholder="Enter your password" />
-                    </div>
                     <div className="form-btn">
-                        <input type="button" value="Sign Up" />
+                        <input type="button" value="Sign In" />
                     </div>
                 </form>
             </div>
             <div className="content-bottom">
-                <p>Already have an account? <span>Sign In</span></p>
-            <p>By clicking &quot;Sign Up above you agree to our <span>Terms of Use and Privacy Policy</span></p>
+                <p>Create an Account here <span>Sign Up</span></p>
             </div>
         </div>
     </div>
@@ -117,4 +104,4 @@ const SignUp = () => {
   )
 }
 
-export default SignUp
+export default SignIn
