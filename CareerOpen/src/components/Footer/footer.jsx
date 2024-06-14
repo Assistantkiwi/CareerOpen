@@ -20,40 +20,36 @@ function Follow() {
 const Footer = () => {
   return (
     <div className='w-[97vw] h[25vh] p-7 my-20 mx-2' >
-      <div className='md:flex justify-between'>
-
+      <div className='flex justify-between'>
+        
       <div className='grid justify-between gap-3.5'>
        <Logo />
       </div>
-      <div className='grid'>
       <div className='grid justify-between gap-3.5'>
         
-      <span className='font-medium'>Product</span>
+      <span className='font-semibold'>Product</span>
       <span>Overview</span>
       <span>Testimonials</span>
       <span>Terms and Privacy</span>
 
       </div>
       <div className='grid justify-between gap-3.5'>
-        <span className='font-medium'>CareerOpen for</span>
+        <span className='font-semibold'>CareerOpen for</span>
         <span>Employers</span>
         <span>Job Seekers</span>
-        </div>
       </div>
-      <div className=''>
       <div className='grid justify-between gap-3.5'>
-      <span className='font-medium'>Resources</span>
+      <span className='font-semibold'>Resources</span>
       <span>Community</span>
       <span>API</span>
       </div>
       <div className='grid justify-between gap-3.5'>
-        <span className='font-medium'>Company</span>
+        <span className='font-semibold'>Company</span>
         <span>Contact Us</span>
         <span>About Us</span>
       </div>
       </div>
-      </div>
-      <div className='flex justify-between mt-16' >
+      <div className='flex justify-between mt-16'>
         <p>@2024 CareerOpen</p>
         <Follow />
       </div>
