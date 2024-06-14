@@ -19,12 +19,14 @@ function Follow() {
 
 const Footer = () => {
   return (
-    <div style={{width: '97vw', height: '25vh', padding: '30px', margin: '80px 5px'}}>
-      <div style={{display: 'flex', justifyContent: 'space-between', }}>
-      <div style={{display: 'grid', justifyContent: 'space-between', gap: '15px'}}>
+    <div className='w-[97vw] h[25vh] p-7 my-20 mx-2' >
+      <div className='md:flex justify-between'>
+
+      <div className='grid justify-between gap-3.5'>
        <Logo />
       </div>
-      <div style={{display: 'grid', justifyContent: 'space-between', gap: '15px'}}>
+      <div className='grid'>
+      <div className='grid justify-between gap-3.5'>
         
       <span className='font-medium'>Product</span>
       <span>Overview</span>
@@ -32,23 +34,26 @@ const Footer = () => {
       <span>Terms and Privacy</span>
 
       </div>
-      <div style={{display: 'grid ', justifyContent: 'space-between', gap: '15px' }}>
+      <div className='grid justify-between gap-3.5'>
         <span className='font-medium'>CareerOpen for</span>
         <span>Employers</span>
         <span>Job Seekers</span>
+        </div>
       </div>
-      <div style={{display: 'grid ', justifyContent: 'space-between', gap: '15px'}}>
+      <div className=''>
+      <div className='grid justify-between gap-3.5'>
       <span className='font-medium'>Resources</span>
       <span>Community</span>
       <span>API</span>
       </div>
-      <div style={{display: 'grid ', justifyContent: 'space-between', gap: '15px'}}>
+      <div className='grid justify-between gap-3.5'>
         <span className='font-medium'>Company</span>
         <span>Contact Us</span>
         <span>About Us</span>
       </div>
       </div>
-      <div style={{display: 'flex', justifyContent: 'space-between', marginTop: '70px'}}>
+      </div>
+      <div className='flex justify-between mt-16' >
         <p>@2024 CareerOpen</p>
         <Follow />
       </div>
