@@ -28,8 +28,8 @@ function Image2 () {
 
 export default function Body () {
     return (
-        <div className='min-w-96 md:max-w-screen-2xl'>
-        <div className='text-gray-800 justify-center items-center md:px-16 md:py-10 md:mx-36 md:leading-[84px]'  >
+        <div className='min-w-96  md:max-w-screen-2xl'>
+        <div className='text-gray-800 mx-5 justify-center items-center md:px-16 md:py-10 md:mx-36 md:leading-[84px]'  >
             <h1 className='font-bold text-4xl text-center md:text-6xl md:mx-20 md:leading-[84px]' >
                 Chart Your Career Journey With <span className="text-[#008552]">
                     Confidence</span></h1>
