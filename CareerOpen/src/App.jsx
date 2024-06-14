@@ -4,6 +4,8 @@ import Body from './components/Body/landpage.jsx';
 import Footer from './components/Footer/footer.jsx';
 
 
+
+
 function App() {
   
 
@@ -19,6 +21,7 @@ function App() {
     <div>
       <Footer />
     </div>
+    
 
 
      

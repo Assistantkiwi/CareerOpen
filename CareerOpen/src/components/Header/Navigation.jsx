@@ -35,7 +35,7 @@ function Logo() {
           <div className=" lg:flex lg:flex-1 lg:justify-end px-3.5 space-x-9">
               <button type='button' className='w-28 h-12 border-2 border-[#008552]'>
                 Sign In</button>
-              <button type='button' className='w-28 h-12 bg-[#008552]'
+               <button type='button' className='w-28 h-12 bg-[#008552]'
               >Sign Up</button>
           </div>
         </nav>
