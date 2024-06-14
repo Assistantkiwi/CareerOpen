@@ -7,13 +7,12 @@ body{
     font-family: 'Red Hat Display', sans-serif;
 }
 
+/* ======== Container ======== */
+
 .container{
     min-height: 100vh;
-    /* max-width: 1000px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    place-content: center;
-    /* width: 100%; */
 }
 
 /* =======Sign Up Side ======= */
@@ -25,23 +24,32 @@ body{
     /* width: 50%; */
 }
 
-.back{
+/* ======== Back arrow styles =========*/
+
+.back>a{
     display: flex;
     align-items: center;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
+    padding-top: 1em;
 }
 
-.back>span{
-    padding: 2em 1em;
+.back span{
+    padding-left: 0.5em;
+    color: #fff;
 }
+
+/* ========= Sign In Side image ========== */
 
 .step-img{
-    padding: 2em 0;
+    padding: 3em 0;
 }
 
 .step-img>img{
     width: 4.5em;
 }
+
+
+/* ========= Sign In side text =========== */
 
 .sign-up-side-text>p:first-child{
    font-weight: 700;
@@ -59,13 +67,21 @@ body{
 /* ======== Sign Up Form ====== */
 
 .sign-up-form{
-    margin: 1em 3em 3em 1em;
+    margin: 0.5em 3em 3em 3em;
+    padding-top: 1.8em;
+}
+
+.sign-up-form .back{
+    padding: 0 0 0 1em;
+    margin-bottom: -2.8em;
 }
 
 .sign-up-head{
     display: flex;
     flex-direction: column;
 }
+
+/* =========== Logo styles =============== */
 
 .logo{
     align-self: center;
@@ -74,6 +90,8 @@ body{
 .logo>img{
     width:10em;
 }
+
+/* ========= Sign in head ========== */
 
 .sign-up{
     text-align: center;
@@ -90,6 +108,7 @@ body{
     padding: 0.5em 0 2em 0;
 }
 
+/* ========= Google and LinkedIn button ========== */
 .sign-up-head .btn{
     align-self: center;
     padding: 0.5em 3em;
@@ -97,19 +116,33 @@ body{
     border: 1px solid #bec2c1;
 }
 
+.btn:last-child{
+    margin-top: 1em;
+    padding: 0.5em 2.6em;
+}
+
 .btn span{
     padding-left: 0.8em;
     font-weight: 550;
 }
 
+/* ========= Sign in form back arrow ============= */
+
+.sign-up-form>.back{
+    display: none;
+}
+
 .sign-up-head a{
     align-self: center;
     color: #000;
-    text-decoration: none;
     display: flex;
 }
 
-.btn:hover{
+a {
+    text-decoration: none;   
+}
+
+a:hover{
     cursor: pointer;
 }
 
@@ -118,6 +151,8 @@ body{
      padding: 1em 0;
 
 }
+
+/* ========= Form ========== */
 
 form{
     display: flex;
@@ -140,27 +175,13 @@ label{
     padding: 0;
 }
 
-.name{
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-}
-
-.name .name-1{
-    width: 45%;
-    padding: 0;
-}
-
-.name .name-2{
-    width: 45%;
-    padding: 0;
-}
-
 .form-btn input{
     background-color: #008552;
     color: #fff;
     height: 50px;
 }
+
+/* ========== Bottom Content ========== */
 
 .content-bottom{
    text-align: center;
@@ -171,4 +192,47 @@ label{
 .content-bottom span{
     color: #008552;
     font-weight: 550;
+}
+
+/* ========== Mobile styles ============ */
+
+@media (max-width: 500px)  {
+
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .sign-up-side{
+        display: none;
+    }
+
+    .sign-up-form{
+        margin: 0.5em;
+        margin-top: 0;
+    }
+
+    .sign-up-form>.back{
+        display: inline;
+    }
+
+    .sign-up-form>.back a{
+        padding-left: 2em;
+        padding-top: 0;
+        padding-bottom: 0.5em;
+    }
+
+    .or{
+        padding-bottom: 0;
+    }
+
+}
+
+/* =========== Tablet view =========== */
+
+@media (min-width: 501px) and (max-width: 760px){
+
+    .or{
+        padding-bottom: 0;
+    }
 }
