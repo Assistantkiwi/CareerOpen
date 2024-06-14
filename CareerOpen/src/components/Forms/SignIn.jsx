@@ -1,4 +1,4 @@
-
+import { useState} from 'react'
 import logo from '../../assets/logo.svg'
 import googleLogo from '../../assets/Google.svg'
 import groupLogo from '../../assets/Group93105.svg'
@@ -37,7 +37,32 @@ function Google() {
     );
 }
 
-const SignIn = () => {
+function SignIn () 
+{
+    const [email, setEmail]=useState("")
+    const [password, setPassword]=useState("")
+
+ async function signIn ()
+    {
+        let item={email,password}
+        console.warn(item)
+
+       let result= await fetch("https://careeropen.onrender.com" ,{
+            method: 'POST',
+            body: JSON.stringify(item),
+            headers:{
+                "Content-Type": 'application/json',
+                "Accept": 'application/json'
+            }
+        })
+        result = await result.json()
+        console.warn("result" ,result)
+    }
+
+
+
+
+
   return (
     <div>
       <div className="container">
@@ -83,15 +108,15 @@ const SignIn = () => {
                     <div className="email-address">
                         <label htmlFor="email">Email Address</label>
                         
-                        <input type="text" name="email" id="email" placeholder="Enter your email address" />
+                        <input type="text" name="email" id="email" value={email} onChange={(e)=>setEmail(e.target.value)}  placeholder="Enter your email address" />
                     </div>
                     <div className="password">
                         <label htmlFor="password">Password</label>
                         
-                        <input type="password" name="password" id="password" placeholder="Enter your password" />
+                        <input type="password" name="password" id="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Enter your password" />
                     </div>
                     <div className="form-btn">
-                        <input type="button" value="Sign In" />
+                        <button onClick={signIn} type="button" value="Sign In">Sign In</button> 
                     </div>
                 </form>
             </div>
@@ -103,5 +128,6 @@ const SignIn = () => {
     </div>
   )
 }
+
 
 export default SignIn

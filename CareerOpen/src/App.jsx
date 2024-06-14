@@ -13,16 +13,20 @@ import SignIn from './components/Forms/SignIn.jsx';
 function App() {
   
   return (
+    
     <>
+    <div>
     <div>
       <Router>
         <Routes>
             <Route path="/signup" element={<SignUp />} />
             <Route path="/signin" element={<SignIn />} />
-
         </Routes>
       </Router>
     </div>
+    </div>
+
+    <div>
     <div className='navbar' >
       <NavBar />
       
@@ -33,9 +37,8 @@ function App() {
     <div>
       <Footer />
     </div>
+    </div>
     
-    
-
 
      
       </>

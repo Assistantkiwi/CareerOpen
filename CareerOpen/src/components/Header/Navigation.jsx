@@ -1,6 +1,10 @@
 
 import careerOpen from '../../assets/logo.svg';
 
+
+
+
+
 const navigation = [
   { name: 'Jobs' },
   { name: 'Job Seekers' },
@@ -18,8 +22,12 @@ function Logo() {
 
 
   const NavBar = () => {
+
+    
     return (
+      
       <div className="bg-white max-w-full mb-3 -mt-5">
+
         <nav className="flex items-center justify-between p-6 lg:px-8 font-bold" aria-label="Global" >
             <a className="w-96">
               <span className="sr-only">Your Company</span>
@@ -33,9 +41,9 @@ function Logo() {
             ))}
           </div>
           <div className=" lg:flex lg:flex-1 lg:justify-end px-3.5 space-x-9">
-              <button type='button' className='w-28 h-12 border-2 border-[#008552]'>
+              <button  type='button' className='w-28 h-12 border-2 border-[#008552]'>
                 Sign In</button>
-               <button type='button' className='w-28 h-12 bg-[#008552]'
+               <button   type='button' className='w-28 h-12 bg-[#008552]'
               >Sign Up</button>
               
           </div>

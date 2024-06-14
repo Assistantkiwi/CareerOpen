@@ -320,7 +320,8 @@ label{
   padding: 0;
 }
 
-.form-btn input{
+button{
+  width: 35vw;
   background-color: #008552;
   color: #fff;
   height: 50px;
