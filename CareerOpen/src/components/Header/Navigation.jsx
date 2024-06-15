@@ -21,9 +21,9 @@ function Logo() {
       
       <div>
         <nav>
-        <div className='img'><Logo /></div>
+        <div to="/" className='img'><Logo /></div>
               <div className='menu' onClick={() => {
-                setMenuOpen(!menuOpen)
+                setMenuOpen(!menuOpen);
               }}>
                 <span ></span>
                 <span ></span>
