@@ -1,6 +1,7 @@
 import section2 from  '../../assets/section2.svg';
 import section3 from '../../assets/section3.svg';
 import section4 from '../../assets/section4.svg';
+import filter from '../../assets/filter.svg';
 
 function Image() {
     return (
@@ -9,6 +10,16 @@ function Image() {
       />
     );
 }
+
+function Filter() {
+    return (
+      <img
+       src={filter} className="image" alt="frame"
+      />
+    );
+}
+
+
 
 function Image1 () {
     return (
@@ -37,6 +48,11 @@ export default function Body () {
                 Experience the power of AI that links you to roles aligned with your skills and ambitions, simplifying the job search process.</p>
         </div>
 
+        <div className='md:max-w-screen-2xl' >
+        <div className='py-5 px-9 m-2'>
+        <Filter />
+        </div>
+        </div> 
             <div className='mt-20 mx-5 md:flex md:shrink-0 md:space-x-44 md:space-y-28 md:px-20'>
                 <div>
                 <h1 className='text-[#2D3936] font-bold text-4xl text-left md:text-5xl '>
@@ -79,24 +95,25 @@ export default function Body () {
             </div>
            </div>
 
-           <div className='mt-10 mx-6 px-4 py-4 rounded-md bg-gradient-to-r from-[#0A8B8B] to-[#008552] ...' /*className='max-w-7xl ml-10 bg-gradient-to-r from-[#0A8B8B] to-[#008552] ...'*/>
+           <div className='mt-10 mx-6 px-4 py-4 rounded-md bg-gradient-to-r from-[#0A8B8B] to-[#008552] ...'>
             <div className=''>
                 <h1 className='text-[#FFFFFF] font-medium text-2xl text-center md:text-4xl md:pt-9 md:leading-[63.5px]' >Newsletter</h1>
                 <p className='text-[#E6F3EE] font-light text-center mt-2 md:text-base' >Get Jobs listing updates everyday</p>
             </div>
             <div className='py-5 md:mx-96 '>
                 <form  action="">
-                <div className='' /*className='mt-10'*/>
+                <div className='' >
                <label className='font-normal text-[#FFFFFF] text-base text-center'  htmlFor='email' >Email Address</label>
             <input type="email" name="email" id="email" placeholder='Enter your email address' className='block px-10 py-2 border-2 border-[#E6F3EE] bg-transparent  rounded-md md:px-16 ' /> 
              </div>
              <div >
-                <button className='text-[#008552] bg-white mt-8  px-24 py-4 rounded-md md:py-3 md:px-32' /*className='text-[#008552] py-3 px-32 rounded  mr-36 bg-white '*/>Subscribe</button>
+                <button className='text-[#008552] bg-white mt-8  px-24 py-4 rounded-md md:py-3 md:px-32'>Subscribe</button>
              </div>
                 </form>
             
             </div>
            </div>
+           
         </div>
     )
 }

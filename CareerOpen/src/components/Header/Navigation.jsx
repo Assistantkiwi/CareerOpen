@@ -1,9 +1,6 @@
 
 import careerOpen from '../../assets/logo.svg';
-
-
-
-
+import Buttons from './Buttons.jsx';
 
 const navigation = [
   { name: 'Jobs' },
@@ -26,13 +23,10 @@ function Logo() {
     
     return (
       
-      <div className="bg-white max-w-full mb-3 -mt-5">
+      <div className="bg-white md:max-w-full mb-3 -mt-5">
 
-        <nav className="flex items-center justify-between p-6 lg:px-8 font-bold" aria-label="Global" >
-            <a className="w-96">
-              <span className="sr-only">Your Company</span>
+        <nav className="flex items-center justify-between p-6 px-8 font-bold" aria-label="Global" >
               <Logo />
-            </a>
           <div className="lg:flex lg:gap-x-12 ">
             {navigation.map((item) => (
               <a key={item.name} className="text-base font-medium leading-6 text-gray-900">
@@ -40,12 +34,8 @@ function Logo() {
               </a>
             ))}
           </div>
-          <div className=" lg:flex lg:flex-1 lg:justify-end px-3.5 space-x-9">
-              <button  type='button' className='w-28 h-12 border-2 border-[#008552]'>
-                Sign In</button>
-               <button   type='button' className='w-28 h-12 bg-[#008552]'
-              >Sign Up</button>
-              
+          <div>
+            <Buttons />
           </div>
         </nav>
         </div>    

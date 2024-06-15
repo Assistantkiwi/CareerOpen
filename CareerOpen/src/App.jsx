@@ -1,22 +1,18 @@
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './components/Header/Navigation.jsx';
 import Body from './components/Body/landpage.jsx';
 import Footer from './components/Footer/footer.jsx';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignUp from './components/Forms/SignUp.jsx';
 import SignIn from './components/Forms/SignIn.jsx';
-
-
-
 
 
 function App() {
   
   return (
-    
     <>
-    <div>
-    <div>
+
+   <div>
+      <div>
       <Router>
         <Routes>
             <Route path="/signup" element={<SignUp />} />
@@ -27,20 +23,20 @@ function App() {
     </div>
 
     <div>
+
     <div className='navbar' >
       <NavBar />
-      
     </div>
+
     <div>
       <Body />
     </div>
+
     <div>
       <Footer />
     </div>
-    </div>
-    
 
-     
+    </div>
       </>
   )
 }
