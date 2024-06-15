@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #FFFFFF;
+
+}
+
+.img {
+    margin: 1.25rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    display: block;
+    padding: 0.5rem;
+    margin: 0 1.25rem;
+    
+}

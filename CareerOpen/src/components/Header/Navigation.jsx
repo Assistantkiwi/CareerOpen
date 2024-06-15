@@ -1,13 +1,9 @@
+import { useState } from 'react';
 
+import './NavBar.css'
 import careerOpen from '../../assets/logo.svg';
 import Buttons from './Buttons.jsx';
 
-const navigation = [
-  { name: 'Jobs' },
-  { name: 'Job Seekers' },
-  { name: 'Employers' },
-  { name: 'About' },
-]
 
 function Logo() {
     return (
@@ -19,26 +15,37 @@ function Logo() {
 
 
   const NavBar = () => {
-
+    const {menuOpen, setMenuOpen} = useState(false)
     
     return (
       
-      <div className="bg-white md:max-w-full mb-3 -mt-5">
-
-        <nav className="flex items-center justify-between p-6 px-8 font-bold" aria-label="Global" >
-              <Logo />
-          <div className="lg:flex lg:gap-x-12 ">
-            {navigation.map((item) => (
-              <a key={item.name} className="text-base font-medium leading-6 text-gray-900">
-                {item.name}
-              </a>
-            ))}
-          </div>
-          <div>
+      <div>
+        <nav>
+        <div className='img'><Logo /></div>
+              <div className='menu' onClick={() => {
+                setMenuOpen(!menuOpen)
+              }}>
+                <span ></span>
+                <span ></span>
+                <span ></span>
+              </div>
+            <ul className={menuOpen ? "open" : ""}>
+            <li >
+                Jobs
+              </li>
+              <li >
+                Job seekers
+              </li>
+              <li >
+                Employers
+              </li>
+              <li>
+                About
+              </li>
             <Buttons />
-          </div>
+            </ul>
         </nav>
-        </div>    
+      </div>
     );
   }
 

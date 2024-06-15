@@ -1,9 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from './components/Header/Navigation.jsx';
+import { Route, Routes } from 'react-router-dom';
 import Body from './components/Body/landpage.jsx';
 import Footer from './components/Footer/footer.jsx';
-import SignUp from './components/Forms/SignUp.jsx';
+import NavBar from './components/Header/Navigation.jsx';
 import SignIn from './components/Forms/SignIn.jsx';
+import SignUp from './components/Forms/SignUp.jsx';
+
+
+
 
 
 function App() {
@@ -11,31 +14,21 @@ function App() {
   return (
     <>
 
-   <div>
-      <div>
-      <Router>
-        <Routes>
-            <Route path="/signup" element={<SignUp />} />
-            <Route path="/signin" element={<SignIn />} />
-        </Routes>
-      </Router>
-    </div>
-    </div>
-
     <div>
-
-    <div className='navbar' >
       <NavBar />
     </div>
-
     <div>
-      <Body />
+      
+    <Routes>
+      <Route path="/signin" element={<SignIn />} />
+      <Route path="/signup" element={<SignUp />} />
+      </Routes>
     </div>
-
     <div>
-      <Footer />
+    <Body />
     </div>
-
+    <div>
+    <Footer />
     </div>
       </>
   )

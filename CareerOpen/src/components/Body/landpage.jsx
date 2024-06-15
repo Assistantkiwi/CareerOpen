@@ -2,6 +2,8 @@ import section2 from  '../../assets/section2.svg';
 import section3 from '../../assets/section3.svg';
 import section4 from '../../assets/section4.svg';
 import filter from '../../assets/filter.svg';
+import filter2 from '../../assets/filter2.svg';
+import './landpage.css'
 
 function Image() {
     return (
@@ -15,6 +17,14 @@ function Filter() {
     return (
       <img
        src={filter} className="image" alt="frame"
+      />
+    );
+}
+
+function Filter2() {
+    return (
+      <img
+       src={filter2} className="image" alt="frame"
       />
     );
 }
@@ -39,7 +49,7 @@ function Image2 () {
 
 export default function Body () {
     return (
-        <div className='min-w-96  md:max-w-screen-2xl'>
+        <div className='min-w-96  max-w-screen-2xl'>
         <div className='text-gray-800 mx-5 justify-center items-center md:px-16 md:py-10 md:mx-36 md:leading-[84px]'  >
             <h1 className='font-bold text-4xl text-center md:text-6xl md:mx-20 md:leading-[84px]' >
                 Chart Your Career Journey With <span className="text-[#008552]">
@@ -48,9 +58,14 @@ export default function Body () {
                 Experience the power of AI that links you to roles aligned with your skills and ambitions, simplifying the job search process.</p>
         </div>
 
-        <div className='md:max-w-screen-2xl' >
-        <div className='py-5 px-9 m-2'>
+        <div className='filter' >
+        <div className='md:py-5 px-9 m-2'>
         <Filter />
+        </div>
+        </div> 
+        <div className='sm:hidden' >
+        <div className='md:py-5 px-9 m-2'>
+        <Filter2 />
         </div>
         </div> 
             <div className='mt-20 mx-5 md:flex md:shrink-0 md:space-x-44 md:space-y-28 md:px-20'>
