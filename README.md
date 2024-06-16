@@ -27,7 +27,7 @@ Figma Design : "https://www.figma.com/design/MzgV9haqlzs0tknGSu4Dhx/CareerOpen"
 * Finishing Touches and Deployment:
     * Applied all finishing touches, pushed changes, and deployed the project.
 
-Errors 
+## Errors: 
 * The sign up component page does not render on another page but on the homepage (this is a work in process).
 * The button on the sign up page is smaller and when fixed it affects the main page (this is also a work in progress).
 * The job application filter is unresponsive.
