@@ -20,11 +20,11 @@ function Logo() {
       
       <div>
         <nav>
-        <div className='img'><Logo /></div>
-              <div className="menu" 
-              onClick={() => {
+        <div className="img"><Logo /></div>
+              <div className="menu" onClick={() => {
                 setMenuOpen(!menuOpen);
-              }}
+              }} 
+              
               >
                 <span ></span>
                 <span ></span>
