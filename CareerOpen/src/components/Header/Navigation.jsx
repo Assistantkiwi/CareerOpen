@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import './NavBar.css'
 import careerOpen from '../../assets/logo.svg';
 import Buttons from './Buttons.jsx';
@@ -15,7 +14,7 @@ function Logo() {
 
 
   const NavBar = () => {
-    const [ menuOpen, setMenuOpen ] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false)
     
     return (
       
