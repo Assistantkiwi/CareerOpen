@@ -1,5 +1,6 @@
 # CareerOpen
 A job search platform.
+
 This project was done by Group 7 SCAxFedEx final project.
 
 Figma Design : "https://www.figma.com/design/MzgV9haqlzs0tknGSu4Dhx/CareerOpen"
