@@ -59,7 +59,7 @@ export default function Body () {
         </div>
 
         <div className='filter' >
-        <div className='md:py-5 px-9 m-2'>
+        <div className='md:py-5 px-9 m-2 ml-6'>
         <Filter />
         </div>
         </div> 
@@ -98,7 +98,7 @@ export default function Body () {
 
            <div className='mt-10 mx-6 px-3 py-3 md:flex md:shrink-0 md:mx-20 md:my-14 ' >
             <div className='md:mx-14 md:my-14'>
-                <h1 className=' text-[#008552] font-semibold text-3xl text-left md:font-medium md:text-5xl md:leading-[63.5px]' >
+                <h1 className=' text-[#008552] font-bold text-3xl text-left md:font-bold md:text-5xl md:leading-[63.5px]' >
                 Discover Top Candidates Tailored to Your Needs</h1>
                 <p className='font-medium mt-8 text-light text-[#57615E] text-left md:gap-8'>
                     User-friendly tools to attract, evaluate, and hire top candidates.</p>
@@ -110,7 +110,7 @@ export default function Body () {
             </div>
            </div>
 
-           <div className='mt-10 mx-6 px-4 py-4 rounded-md bg-gradient-to-r from-[#0A8B8B] to-[#008552] ...'>
+           <div className='mt-10 mx-10 px-4 py-4 rounded-md bg-gradient-to-r from-[#0A8B8B] to-[#008552] ...'>
             <div className=''>
                 <h1 className='text-[#FFFFFF] font-medium text-2xl text-center md:text-4xl md:pt-9 md:leading-[63.5px]' >Newsletter</h1>
                 <p className='text-[#E6F3EE] font-light text-center mt-2 md:text-base' >Get Jobs listing updates everyday</p>

@@ -6,9 +6,9 @@ const Buttons = () => {
 <div className=" flex">
 
     <div>
-     <Link to="/Signin" className='w-28 h-12 p-5 m-5 border-2 border-[#008552] bg-transparent mr-2 text-[#008552]'>
+     <Link to="/Signin" className='w-28 h-12 p-4 m-5 border-2 border-[#008552] bg-transparent mr-2 text-[#008552] rounded-md'>
         Sign In</Link>
-     <Link to="/SignUp" className='w-28 h-12 p-5 m-5 text-white bg-[#008552]'
+     <Link to="/SignUp" className='w-28 h-12 p-4 m-5 text-white border-2 border-transparent bg-[#008552] rounded-md'
         >Sign Up</Link>
               </div>
     </div>

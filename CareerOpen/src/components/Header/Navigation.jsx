@@ -15,16 +15,17 @@ function Logo() {
 
 
   const NavBar = () => {
-    const {menuOpen, setMenuOpen} = useState(false)
+    const [ menuOpen, setMenuOpen ] = useState(false);
     
     return (
       
       <div>
         <nav>
-        <div to="/" className='img'><Logo /></div>
+        <div className='img'><Logo /></div>
               <div className='menu' onClick={() => {
                 setMenuOpen(!menuOpen);
-              }}>
+              }}
+              >
                 <span ></span>
                 <span ></span>
                 <span ></span>
