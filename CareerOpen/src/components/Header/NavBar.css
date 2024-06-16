@@ -40,8 +40,8 @@ nav .menu span {
 
 }
 
-@media (max-width: 460px) {
-    nav .menu {
+@media (max-width: 440px) {
+    nav.menu {
         display: flex;
     }
 
@@ -57,7 +57,7 @@ nav .menu span {
         margin-bottom: 0.25rem;
     }
 
-    nav ul .open {
+    nav ul.open {
         display: flex;
     }
 

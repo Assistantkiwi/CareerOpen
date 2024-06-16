@@ -6,10 +6,6 @@ import SignIn from './components/Forms/SignIn.jsx';
 import SignUp from './components/Forms/SignUp.jsx';
 
 
-
-
-
-
 function App() {
   
   return (
