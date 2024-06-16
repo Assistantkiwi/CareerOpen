@@ -122,7 +122,7 @@ function SignUp ()
                         <input type="password" name="password" id="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Enter your password" />
                     </div>
                     <div className="confirm-password">
-                        <label htmlFor="confirm-password">Password</label>
+                        <label htmlFor="confirm-password">Confirm Password</label>
                         
                         <input type="password" name="password" id="confirm-password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Enter your password" />
                     </div>
