@@ -71,7 +71,7 @@ export default function Body() {
               className="bg-[#008552] text-[#FFFFFF] mt-10 py-4 px-36 rounded-md"
             >
                 <Link to={"../signup"}>
-              Get Started
+              Get Started and win a raffle
               </Link>
             </button>
           </div>
