@@ -49,7 +49,7 @@ function SignUp() {
       <div className="container">
         <div className="sign-up-side">
           <div className="back">
-          <Link to={"../index"} >
+          <Link to={"../"} >
             <Arrow /> <span>Back</span>
             </Link>
           </div>

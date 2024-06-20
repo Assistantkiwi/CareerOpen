@@ -8,6 +8,7 @@ import Footer from "../Footer/footer.jsx";
 import "./landpage.css";
 import { Link } from "react-router-dom";
 
+
 function Image() {
   return <img src={section2} className="image" alt="frame" />;
 }
@@ -70,8 +71,8 @@ export default function Body() {
               type="button"
               className="bg-[#008552] text-[#FFFFFF] mt-10 py-4 px-36 rounded-md"
             >
-                <Link to={"../signup"}>
-              Get Started and win a raffle
+             <Link to={"../signup"}>  
+              Get Started
               </Link>
             </button>
           </div>
@@ -114,9 +115,9 @@ export default function Body() {
               type="button"
               className="bg-[#008552] text-[#FFFFFF] mt-8 py-4 px-32 rounded-md"
             >
-                <Link to={"../signup"}>
+            <Link to={"../signup"}>
               Post Job
-              </Link>
+              </Link>  
             </button>
           </div>
           <div className="mt-10 mb-5 md:mx-20 md:my14 ">
