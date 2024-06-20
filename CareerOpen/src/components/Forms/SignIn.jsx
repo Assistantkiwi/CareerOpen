@@ -64,9 +64,9 @@ function SignIn() {
         </div>
         <div className="sign-up-form">
           <div className="back">
-            <a href="">
+            <Link to={"../"}>
               <Arrow />
-            </a>
+            </Link>
           </div>
           <div className="sign-up-head">
             <div className="logo">

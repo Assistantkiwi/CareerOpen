@@ -65,6 +65,11 @@ function SignUp() {
           </div>
         </div>
         <div className="sign-up-form">
+        <div className="back">
+            <Link to={"../"}>
+              <Arrow />
+            </Link>
+          </div>
           <div className="sign-up-head">
             <div className="logo">
               <Logo />
